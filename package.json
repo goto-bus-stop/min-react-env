@@ -1,0 +1,43 @@
+{
+  "name": "min-react-env",
+  "description": "minimal browser mocks for testing react-dom code in node.js",
+  "version": "0.0.0",
+  "author": "Renée Kooi <renee@kooi.me>",
+  "bugs": {
+    "url": "https://github.com/goto-bus-stop/min-react-env/issues"
+  },
+  "devDependencies": {
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "standard": "^11.0.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.0.0"
+  },
+  "homepage": "https://github.com/goto-bus-stop/min-react-env",
+  "keywords": [
+    "browser",
+    "dom",
+    "global",
+    "jsdom",
+    "minimal",
+    "mocking",
+    "mocks",
+    "react",
+    "react-dom",
+    "small",
+    "test",
+    "testing"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goto-bus-stop/min-react-env.git"
+  },
+  "scripts": {
+    "test": "standard && node test | tap-spec"
+  },
+  "dependencies": {
+    "min-document": "^2.19.0"
+  }
+}
