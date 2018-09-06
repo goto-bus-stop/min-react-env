@@ -12,8 +12,8 @@ It uses [min-document](https://github.com/raynos/min-document) with a few tiny a
 
 [npm-image]: https://img.shields.io/npm/v/min-react-env.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/min-react-env
-[travis-image]: https://img.shields.io/travis/goto-bus-stop/min-react-env.svg?style=flat-square
-[travis-url]: https://travis-ci.org/goto-bus-stop/min-react-env
+[travis-image]: https://img.shields.io/travis/com/goto-bus-stop/min-react-env.svg?style=flat-square
+[travis-url]: https://travis-ci.com/goto-bus-stop/min-react-env
 [standard-image]: https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat-square
 [standard-url]: http://npm.im/standard
 
