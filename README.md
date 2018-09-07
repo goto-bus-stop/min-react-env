@@ -4,6 +4,8 @@ minimal browser mocks for testing react-dom code in node.js
 
 It uses [min-document](https://github.com/raynos/min-document) with a few tiny addons, mocking _just_ enough for react-dom to be able to run. This is much smaller than using a full [JSDOM](https://github.com/jsdom/jsdom) instance or similar. If you don't do fancy DOM things in your components, min-document could well be enough.
 
+You could _just_ use min-document, but react-dom depends on a few more things to be available on the `window` object, and this package encapsulates that.
+
 [Install](#install) - [Usage](#usage) - [License: Apache-2.0](#license)
 
 [![npm][npm-image]][npm-url]
