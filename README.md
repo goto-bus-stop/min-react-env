@@ -25,24 +25,50 @@ npm install min-react-env
 
 ## Usage
 
+min-react-env exports `window` and `document` variables.
+Assign them to the global object:
+
 ```js
 import { window, document } from 'min-react-env'
+import React from 'react'
+import ReactDOM from 'react-dom'
+
 global.window = window
 global.document = document
 
+// Assuming a test framework like Mocha or Jest
 describe('My Tests', () => {
-  // etc
+  const wrapper = document.createElement('main')
+  ReactDOM.render(<MyComponent />, wrapper, () => {
+    assert.strictEqual(
+      wrapper.toString(),
+      '<main><div class="MyComponent"></div></main>'
+    )
+  })
 })
 ```
+
+Now you can run your react-dom tests in Node!
+
+If you use CommonJS (eg. you don't have a compile step), you can use this pattern:
 
 ```js
-// commonjs
+const test = require('tape')
 Object.assign(global, require('min-react-env'))
 
-describe('My Tests', () => {
-  // etc
+test('My Tests', (t) => {
+  t.plan(1)
+  const wrapper = document.createElement('main')
+  ReactDOM.render(<MyComponent />, wrapper, () => {
+    t.strictEqual(
+      wrapper.toString(),
+      '<main><div class="MyComponent"></div></main>'
+    )
+  })
 })
 ```
+
+The [tests for this package](./test/index.js) actually do something very similar!
 
 ## License
 
