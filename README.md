@@ -21,8 +21,8 @@ You could _just_ use min-document, but react-dom depends on a few more things to
 
 ## Install
 
-```
-npm install min-react-env
+```bash
+npm install --save-dev min-react-env
 ```
 
 ## Usage
