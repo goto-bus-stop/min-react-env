@@ -5,6 +5,12 @@ jobs:
   include:
     - name: Test on stable Node.js
       node_js: stable
+    - name: Test on stable Node.js with React 15
+      node_js: stable
+      before_script: npm install --no-save react@15 react-dom@15
+    - name: Test on stable Node.js with React 0.14
+      node_js: stable
+      before_script: npm install --no-save react@0.14 react-dom@0.14
     - name: Test on Node.js 12
       node_js: 12
     - name: Test on Node.js 10
